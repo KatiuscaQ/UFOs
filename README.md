@@ -87,3 +87,4 @@ Meanwhile on the app.js document, the button was brought "to life" by making a f
 - The webpage was upgraded from the original by adding a gif in the area below the heading to balance out the site and to make it more appealing, any gif or image could be used in this area (I chose a funny one).
 - The reset button was centered, sized, and colored to match the theme of the webpage.
 - The "Filter Search" title was also altered to better fit site.
+- The placeholders now read "e.g. fresno" instead of "fresno" for a more appealing look.
