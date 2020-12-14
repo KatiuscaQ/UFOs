@@ -26,6 +26,10 @@
         <div class="row">
           <div class="col-md-4">
             <h3>UFO Sightings: Fact of Fancy? <small>Ufologists Weigh In</small></h3>
+            <img src="static/images/giphy.gif"
+            class="img-responsive"
+            alt="Responsive image"
+            style ="width:70%">
           </div>
           <div class="col-md-8">
             <p>
@@ -40,7 +44,7 @@
         <div class="row">
           <div class="col-md-3">
             <form class="bg-dark"> 
-                <p>Filter Search</p>
+                <h3><small>Filter Search</small></h3>
             </form>
             <ul class="list-group">
                 <li class="list-group-item bg-dark">
@@ -49,24 +53,25 @@
                 </li>
                 <li class="list-group-item bg-dark">
                     <label for="city">Enter a City</label>
-                    <input type="text" placeholder="fresno" id="city" class="form-control"/>
+                    <input type="text" placeholder="fresno" id="city" class="form-control" onkeyup="return forceLower(this);"/>
                 </li>
                 <li class="list-group-item bg-dark">
                     <label for="state">Enter a State</label>
-                    <input type="text" placeholder="ca" id="state" class="form-control"/>
+                    <input type="text" placeholder="ca" id="state" class="form-control" onkeyup="return forceLower(this);"/>
                 </li>
                 <li class="list-group-item bg-dark">
                     <label for="country">Enter a Country</label>
-                    <input type="text" placeholder="us" id="country" class="form-control"/>
+                    <input type="text" placeholder="us" id="country" class="form-control" onkeyup="return forceLower(this);"/>
                 </li>
                 <li class="list-group-item bg-dark">
                     <label for="shape">Enter a Shape</label>
-                    <input type="text" placeholder="light" id="shape" class="form-control"/>
-                </li>   
+                    <input type="text" placeholder="light" id="shape" class="form-control" onkeyup="return forceLower(this);"/>
+                </li>  
+                <!--THIS IS A RESET SEARCH BUTTON--> 
                 <li  class="list-group-item bg-dark text-center">
                     <button id="reset" type="button" class="btn btn-dark btn-lg">Reset Search</button>
                 </li>          
-            </ul>
+            </ul>            
           </div>
           <div class="col-md-9">
             <table class="table table-striped" style="font-family: inherit; font-size: 1rem;">
@@ -81,8 +86,10 @@
                     <th>Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody></tbody>              
             </table>
+            <h2 id="notFound" class="text-center"> </h2>
+            <p id="notFound2" class="text-center"> </p>
           </div>
         </div>
     </div>
